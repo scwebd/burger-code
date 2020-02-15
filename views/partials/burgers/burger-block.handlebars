@@ -1,0 +1,11 @@
+<li>
+	{{burger_name}}
+
+    {{#if devoured}}
+        <button class="devour-burg" data-id="{{id}}" data-devoured="{{devoured}}">DEVOUR BURGER!!</button>
+        {{!-- NICK: I cut out the 'else' in here as I don't think you need it  --}}
+    {{/if}}
+
+    {{!-- NICK: adding a delete button for all burgers and attaching the db id of the burger on the button for easy access --}}
+    <button class="delete-burg" data-id="{{id}}">DELETE BURGER!!</button>
+</li>
